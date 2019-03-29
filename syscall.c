@@ -146,7 +146,7 @@ syscall(void)
     //cprintf("syscall number:%d\n",num);
   if(num == 5) {
     readcount++;
-    cprintf("readcount is:%d\n",readcount);
+    //cprintf("readcount is:%d\n",readcount);
   }
 
     curproc->tf->eax = syscalls[num]();
